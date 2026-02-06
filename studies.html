@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Study | Krish Patel</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <strong>Krish Patel</strong>
+        <span>Cybersecurity • SOC / Cloud Security</span>
+      </div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="studies.html">Study</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="kicker">Study</div>
+      <h1>What I studied</h1>
+      <p class="muted">A recruiter-friendly summary of coursework + practical focus areas.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card half">
+        <div class="smallcaps">Education</div>
+        <h2 style="margin-top:8px;">Bachelor of Cyber Security</h2>
+        <p class="muted" style="margin-top:6px;">
+          Add your university + expected graduation year here.
+        </p>
+        <div class="badges">
+          <span class="badge">Security Monitoring</span>
+          <span class="badge">Cloud Security</span>
+          <span class="badge">Network Security</span>
+          <span class="badge">Linux</span>
+        </div>
+      </div>
+
+      <div class="card half">
+        <div class="smallcaps">Certifications</div>
+        <ul class="list">
+          <li><strong>CompTIA Security+</strong></li>
+          <li><strong>CySA+</strong> (in progress)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="smallcaps">Key areas covered</div>
+        <ul class="list">
+          <li><strong>SIEM & log analysis:</strong> ingesting logs, building queries, investigating anomalies</li>
+          <li><strong>Network security fundamentals:</strong> DNS/SSH traffic understanding, authentication events, baselining</li>
+          <li><strong>Cloud security (AWS):</strong> access control, security groups, least privilege, logging</li>
+          <li><strong>Systems security:</strong> Linux administration, hardening, secure configuration</li>
+          <li><strong>Security mindset:</strong> risk, controls, documentation, and evidence-based reporting</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer">© <span id="year"></span> Krish Patel</div>
+  </div>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

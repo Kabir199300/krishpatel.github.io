@@ -36,10 +36,11 @@ a:hover {
 
 /* Container */
 .container {
-  max-width: 980px;
+  max-width: 1200px;   /* wider, more editorial */
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 32px;     /* more breathing room on sides */
 }
+
 
 /* Top bar */
 .topbar {
@@ -240,3 +241,9 @@ h1 {
     gap: 40px;
   }
 }
+
+/* Wider layout specifically for projects page */
+.projects-wide {
+  max-width: 1320px;
+}
+

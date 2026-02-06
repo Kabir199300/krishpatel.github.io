@@ -1,0 +1,88 @@
+<!-- File: projects/safeline-waf.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Web Application Firewall Lab | Krish Patel</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=reset1" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <div class="brand"><strong>Krish Patel</strong></div>
+        <div class="navlinks">
+          <a href="../index.html">Home</a>
+          <a href="../studies.html">Study</a>
+          <a href="../projects.html" class="active">Projects</a>
+          <a href="../experience.html">Experience</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Web Application Firewall Home Lab — SafeLine</h1>
+      <p class="subtitle">SafeLine WAF · DVWA · Ubuntu · Reverse Proxy · Attack Simulation</p>
+    </section>
+
+    <section class="section">
+      <h2>Overview</h2>
+      <p class="project-desc">
+        Built a web application security lab to understand how a Web Application Firewall (WAF) protects applications
+        from common web-based attacks. The lab focused on deploying SafeLine in front of a deliberately vulnerable
+        application and validating detection and blocking behaviour.
+      </p>
+
+      <h2>Lab Setup</h2>
+      <ul class="list">
+        <li>Deployed an Ubuntu-based web server hosting DVWA (Damn Vulnerable Web Application).</li>
+        <li>Configured SafeLine as a reverse proxy in front of the web application.</li>
+        <li>Ensured all client traffic passed through the WAF before reaching the application.</li>
+      </ul>
+
+      <h2>What I Did</h2>
+      <ul class="list">
+        <li>Configured SafeLine security policies, including IP rules and rate limiting.</li>
+        <li>Generated attack traffic from a Kali Linux machine targeting known DVWA vulnerabilities.</li>
+        <li>Simulated common web attacks such as SQL injection and malicious request patterns.</li>
+        <li>Observed WAF decisions to understand how requests were allowed, challenged, or blocked.</li>
+      </ul>
+
+      <h2>What I Tested and Validated</h2>
+      <ul class="list">
+        <li><strong>Attack detection:</strong> verified SafeLine’s ability to identify malicious payloads.</li>
+        <li><strong>Blocking effectiveness:</strong> confirmed that malicious requests were stopped before reaching the application.</li>
+        <li><strong>Logging & visibility:</strong> reviewed WAF logs to correlate blocked requests with attack attempts.</li>
+      </ul>
+
+      <h2>Key Outcomes</h2>
+      <ul class="list">
+        <li>Developed a practical understanding of how WAFs sit in front of applications and enforce security controls.</li>
+        <li>Gained experience interpreting WAF logs and understanding false positives vs real threats.</li>
+        <li>Strengthened knowledge of web attack patterns and defensive controls used in production environments.</li>
+      </ul>
+
+      <h2>Tools</h2>
+      <ul class="list">
+        <li>SafeLine Web Application Firewall</li>
+        <li>DVWA (Damn Vulnerable Web Application)</li>
+        <li>Ubuntu Server</li>
+        <li>Kali Linux (attack simulation)</li>
+      </ul>
+
+      <p style="margin-top:26px;">
+        <a class="details-link" href="../projects.html">← Back to Projects</a>
+      </p>
+    </section>
+
+    <div class="footer">© <span id="year"></span> Krish Patel</div>
+  </main>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

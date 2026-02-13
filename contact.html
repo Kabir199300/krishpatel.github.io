@@ -1,62 +1,68 @@
+<!-- File: contact.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact | Krish Patel</title>
-<link rel="stylesheet" href="assets/css/style.css?v=reset1" />
+  <link rel="stylesheet" href="assets/css/style.css?v=reset1" />
 </head>
 <body>
-  <div class="container">
-    <nav class="nav">
-      <div class="brand">
-        <strong>Krish Patel</strong>
-        <span>Cybersecurity • SOC / Cloud Security</span>
-      </div>
-      <div class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="studies.html">Study</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
 
+  <div class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <div class="brand"><strong>Krish Patel</strong></div>
+        <div class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="studies.html">Study</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
     <section class="hero">
-      <div class="kicker">Contact</div>
-      <h1>Let’s connect</h1>
-      <p class="muted">Best way is LinkedIn. Email also works for recruiters.</p>
+      <h1>Contact</h1>
+      <p class="subtitle">
+        The best way to connect with me is via LinkedIn or GitHub.
+      </p>
+    </section>
 
-      <section class="grid">
-        <div class="card half">
-          <div class="smallcaps">LinkedIn</div>
-          <p style="margin:10px 0;">
-            <a class="btn" href="#" target="_blank" rel="noopener">Open LinkedIn (add link)</a>
-          </p>
-          <p class="muted">Tip: use a custom LinkedIn URL for clean branding.</p>
-        </div>
-
-        <div class="card half">
-          <div class="smallcaps">Email</div>
-          <p style="margin:10px 0;">
-            <a class="btn" href="mailto:yourname@email.com">yourname@email.com</a>
-          </p>
-          <p class="muted">Replace with your preferred recruiter email.</p>
-        </div>
-
-        <div class="card">
-          <div class="smallcaps">GitHub</div>
-          <p style="margin:10px 0;">
-            <a class="btn secondary" href="https://github.com/krishpatel93" target="_blank" rel="noopener">github.com/krishpatel93</a>
+    <section class="section">
+      <div class="project-row">
+        <div>
+          <div class="project-title">LinkedIn</div>
+          <p class="project-desc">
+            Professional profile, background, and project updates.
           </p>
         </div>
-      </section>
+        <a class="details-link" href="https://www.linkedin.com/in/krish-patel-346278224" target="_blank">
+          Visit →
+        </a>
+      </div>
+
+      <div class="project-row">
+        <div>
+          <div class="project-title">GitHub</div>
+          <p class="project-desc">
+            Code, labs, and technical projects.
+          </p>
+        </div>
+        <a class="details-link" href="https://github.com/krishpatel93" target="_blank">
+          Visit →
+        </a>
+      </div>
     </section>
 
     <div class="footer">© <span id="year"></span> Krish Patel</div>
-  </div>
+  </main>
 
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
